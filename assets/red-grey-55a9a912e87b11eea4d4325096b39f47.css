@@ -6,7 +6,7 @@
 .navbar a.navbar-item:hover,
 .navbar a.navbar-item:focus {
     color: var(--vstdev-vst-color);
-    _background-color: inherit;
+    background-color: inherit;
     text-decoration: none;
 }
 
