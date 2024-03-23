@@ -2,13 +2,13 @@
     --vstdev-vst-color: #c90526;
 }
 
+body.has-navbar-fixed-top {
+    padding-top: 52px;
+}
+
 /**** navbar ****/
 .vstdev-navbar {
     border-bottom: 1px solid #ebeaeb;
-}
-
-body.has-navbar-fixed-top {
-    padding-top: 52px;
 }
 
 .vstdev-logo {
@@ -33,7 +33,7 @@ body.has-navbar-fixed-top {
 
 .vstdev-navbar .navbar-brand {
     align-items: center;
-    padding-left: 18px;
+    padding-left: 0px;
 }
 
 @media (min-width: 1024px) {
