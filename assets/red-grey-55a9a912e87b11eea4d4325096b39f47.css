@@ -22,21 +22,11 @@
     border-style: hidden;
 }
 
-.navbar-brand img {
-    border-radius: 16%;
-    height: 100%;
-}
-
 /**** hero ****/
 .hero.is-main-hero {
     background-image: url('hero-main/background-55a9a4e4e87b11ee8884325096b39f47.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.hero.is-main-hero img {
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-    border-radius: 16%;
 }
 
 .hero a {
@@ -72,8 +62,4 @@
 .footer a:hover {
     color: var(--vstdev-vst-color);
     text-decoration: underline;
-}
-
-.footer img {
-    border-radius: 16%;
 }
