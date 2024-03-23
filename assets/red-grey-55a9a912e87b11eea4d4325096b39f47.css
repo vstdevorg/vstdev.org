@@ -3,6 +3,60 @@
 }
 
 /**** navbar ****/
+.vstdev-navbar {
+    border-bottom: 1px solid #ebeaeb;
+}
+
+body.has-navbar-fixed-top {
+    padding-top: 52px;
+}
+
+.vstdev-logo {
+    height: 30px;
+    vertical-align: middle;
+}
+
+@media (min-width: 1024px) {
+
+    body.has-navbar-fixed-top {
+        padding-top: 85px;
+    }
+
+    .vstdev-navbar {
+        padding: 16px 0;
+    }
+
+    .vstdev-logo {
+        height: 54px;
+    }
+}
+
+.vstdev-navbar .navbar-brand {
+    align-items: center;
+    padding-left: 18px;
+}
+
+@media (min-width: 1024px) {
+    .vstdev-navbar .navbar-brand {
+        padding: 0px;
+    }
+}
+
+.navbar-item img {
+    max-height: 3rem;
+}
+
+.navbar-menu.is-active {
+    position: absolute;
+    width: 100%;
+}
+
+.vstdev-navbar .navbar-item,
+.vstdev-navbar .navbar-link {
+    color: #1b1b1b;
+    font-size: 16px;
+}
+
 .navbar a.navbar-item:hover,
 .navbar a.navbar-item:focus {
     color: var(--vstdev-vst-color);
