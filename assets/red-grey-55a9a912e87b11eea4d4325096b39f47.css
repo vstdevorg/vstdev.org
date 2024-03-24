@@ -11,8 +11,13 @@ body.has-navbar-fixed-top {
     border-bottom: 1px solid #ebeaeb;
 }
 
-.vstdev-logo {
+.vstdev-vst-logo {
     height: 30px;
+    vertical-align: middle;
+}
+
+.vstdev-vst-trademark-logo {
+    height: 120px;
     vertical-align: middle;
 }
 
@@ -26,7 +31,7 @@ body.has-navbar-fixed-top {
         padding: 16px 0;
     }
 
-    .vstdev-logo {
+    .vstdev-vst-logo {
         height: 54px;
     }
 }
