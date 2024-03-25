@@ -1,8 +1,9 @@
 :root {
     --vstdev-vst-color: #c90526;
     --vstdev-vst-logo-old-dark-color: #8b9ea8;
-    --vstdev-vst-logo-old-light-color: #c8d9e1;
     --vstdev-vst-logo-old-middle-light-color: #aabcc5;
+    --vstdev-vst-logo-old-middle-lighter-color: #b9cbd3;
+    --vstdev-vst-logo-old-light-color: #c8d9e1;
 }
 
 body.has-navbar-fixed-top {
@@ -82,7 +83,7 @@ body.has-navbar-fixed-top {
 
 .navbar a.button:hover {
     color: var(--bulma-title-color);
-    background-color: var(--vstdev-vst-logo-old-middle-light-color);
+    background-color: var(--vstdev-vst-logo-old-middle-lighter-color);
     border-style: hidden;
 }
 
@@ -110,7 +111,7 @@ body.has-navbar-fixed-top {
 }
 
 .hero a.button:hover {
-    background-color: var(--vstdev-vst-logo-old-middle-light-color);
+    background-color: var(--vstdev-vst-logo-old-middle-lighter-color);
     border-style: hidden;
 }
 
