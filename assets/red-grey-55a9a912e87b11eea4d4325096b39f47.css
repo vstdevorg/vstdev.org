@@ -5,6 +5,9 @@
     --vstdev-vst-logo-old-middle-light-color: #aabcc5;
     --vstdev-vst-logo-old-middle-lighter-color: #b9cbd3;
     --vstdev-vst-logo-old-light-color: #c8d9e1;
+
+    --vstdev-vst-navbar-background-color: white;
+    --vstdev-vst-navbar-border-bottom-color: #ebeaeb;
 }
 
 /**** navbar ****/
@@ -14,7 +17,8 @@ body.has-navbar-fixed-top {
 }
 
 .vstdev-navbar {
-    border-bottom: 1px solid #ebeaeb;
+    border-bottom: 1px solid var(--vstdev-vst-navbar-border-bottom-color);
+    background-color: var(--vstdev-vst-navbar-background-color);
 }
 
 .vstdev-navbar .vstdev-vst-logo {
