@@ -8,11 +8,11 @@
     --vstdev-vst-logo-old-light-color: #c8d9e1;
 }
 
+/**** navbar ****/
 body.has-navbar-fixed-top {
     padding-top: 52px;
 }
 
-/**** navbar ****/
 .vstdev-navbar {
     border-bottom: 1px solid #ebeaeb;
 }
@@ -23,9 +23,9 @@ body.has-navbar-fixed-top {
     padding-left: .75rem;
 }
 
-.vstdev-vst-trademark-logo {
-    height: 120px;
-    vertical-align: middle;
+.vstdev-navbar .navbar-brand {
+    align-items: center;
+    padding-left: 0px;
 }
 
 @media (min-width: 1024px) {
@@ -42,14 +42,7 @@ body.has-navbar-fixed-top {
         height: auto;
         padding-left: 0rem;
     }
-}
 
-.vstdev-navbar .navbar-brand {
-    align-items: center;
-    padding-left: 0px;
-}
-
-@media (min-width: 1024px) {
     .vstdev-navbar .navbar-brand {
         padding: 0px;
     }
@@ -118,6 +111,11 @@ body.has-navbar-fixed-top {
 }
 
 /**** footer ****/
+.vstdev-vst-trademark-logo {
+    height: 120px;
+    vertical-align: middle;
+}
+
 .footer {
     background-color: var(--vstdev-vst-light-grey);
 }
