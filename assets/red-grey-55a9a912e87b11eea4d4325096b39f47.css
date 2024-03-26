@@ -8,6 +8,7 @@
 }
 
 /**** navbar ****/
+/* default: 3.25rem is 52px*/
 body.has-navbar-fixed-top {
     padding-top: 52px;
 }
