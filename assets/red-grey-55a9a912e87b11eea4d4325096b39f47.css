@@ -1,28 +1,33 @@
 :root {
     /* vst logo colors (and derivated colors)*/
-    --vstdev-vst-light-grey: #f4f5f7;
+    --vstdev-vst-dev-portal-menu-background-color: #f4f5f7;
     --vstdev-vst-dark-grey: #cfcfcf;
     --vstdev-vst-logo-old-dark-color: #8b9ea8;
     --vstdev-vst-logo-old-middle-light-color: #aabcc5;
     --vstdev-vst-logo-old-middle-lighter-color: #b9cbd3;
-    --vstdev-vst-logo-old-light-color: #c8d9e1;
+    /* vst icon colors */
+    --vstdev-vst-icon-light-blue-01: #c8d8e1;
+    --vstdev-vst-icon-light-blue-02: #9fb4c4;
+    --vstdev-vst-icon-light-blue-03: #6d879b;
+    --vstdev-vst-icon-dark-blue-01: #648094;
+    --vstdev-vst-icon-dark-blue-02: #273a4a;
     /* navbar */
     --vstdev-navbar-background-color: white;
     --vstdev-navbar-border-bottom-color: #ebeaeb;
     --vstdev-navbar-item-link-color: #1b1b1b;
-    --vstdev-navbar-item-link-hover-color: var(--vstdev-vst-logo-old-dark-color);
-    --vstdev-navbar-button-background-color: var(--vstdev-vst-logo-old-light-color);
+    --vstdev-navbar-item-link-hover-color: var(--vstdev-vst-icon-light-blue-03);
+    --vstdev-navbar-button-background-color: var(--vstdev-vst-icon-light-blue-01);
     --vstdev-navbar-button-hover-color: var(--vstdev-vst-logo-old-middle-lighter-color);
     --vstdev-navbar-button-text-color: var(--bulma-title-color);
     /* hero */
     --vstdev-hero-link-color: var(--bulma-title-color);
-    --vstdev-hero-link-hover-color: var(--vstdev-vst-logo-old-dark-color);
-    --vstdev-hero-button-background-color: var(--vstdev-vst-logo-old-light-color);
+    --vstdev-hero-link-hover-color: var(--vstdev-vst-icon-light-blue-03);
+    --vstdev-hero-button-background-color: var(--vstdev-vst-icon-light-blue-01);
     --vstdev-hero-button-hover-color: var(--vstdev-vst-logo-old-middle-lighter-color);
     /* footer */
-    --vstdev-footer-background-color: var(--vstdev-vst-light-grey);
+    --vstdev-footer-background-color: var(--vstdev-vst-dev-portal-menu-background-color);
     --vstdev-footer-link-color: grey;
-    --vstdev-footer-link-hover-color: var(--vstdev-vst-logo-old-dark-color);
+    --vstdev-footer-link-hover-color: var(--vstdev-vst-icon-light-blue-03);
 }
 
 /**** navbar ****/
