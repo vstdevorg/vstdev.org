@@ -1,18 +1,28 @@
 :root {
+    /* vst logo colors (and derivated colors)*/
     --vstdev-vst-light-grey: #f4f5f7;
     --vstdev-vst-dark-grey: #cfcfcf;
     --vstdev-vst-logo-old-dark-color: #8b9ea8;
     --vstdev-vst-logo-old-middle-light-color: #aabcc5;
     --vstdev-vst-logo-old-middle-lighter-color: #b9cbd3;
     --vstdev-vst-logo-old-light-color: #c8d9e1;
-
+    /* navbar */
     --vstdev-navbar-background-color: white;
     --vstdev-navbar-border-bottom-color: #ebeaeb;
     --vstdev-navbar-item-link-color: #1b1b1b;
-    --vstdev-navbar-item-hover-color: var(--vstdev-vst-logo-old-dark-color);
+    --vstdev-navbar-item-link-hover-color: var(--vstdev-vst-logo-old-dark-color);
     --vstdev-navbar-button-background-color: var(--vstdev-vst-logo-old-light-color);
     --vstdev-navbar-button-hover-color: var(--vstdev-vst-logo-old-middle-lighter-color);
     --vstdev-navbar-button-text-color: var(--bulma-title-color);
+    /* hero */
+    --vstdev-hero-link-color: var(--bulma-title-color);
+    --vstdev-hero-link-hover-color: var(--vstdev-vst-logo-old-dark-color);
+    --vstdev-hero-button-background-color: var(--vstdev-vst-logo-old-light-color);
+    --vstdev-hero-button-hover-color: var(--vstdev-vst-logo-old-middle-lighter-color);
+    /* footer */
+    --vstdev-footer-background-color: var(--vstdev-vst-light-grey);
+    --vstdev-footer-link-color: grey;
+    --vstdev-footer-link-hover-color: var(--vstdev-vst-logo-old-dark-color);
 }
 
 /**** navbar ****/
@@ -74,7 +84,7 @@ body.has-navbar-fixed-top {
 
 .navbar a.navbar-item:hover,
 .navbar a.navbar-item:focus {
-    color: var(--vstdev-navbar-item-hover-color);
+    color: var(--vstdev-navbar-item-link-hover-color);
     background-color: inherit;
     text-decoration: none;
 }
@@ -99,23 +109,23 @@ body.has-navbar-fixed-top {
 }
 
 .hero a {
-    color: var(--bulma-title-color);
+    color: var(--vstdev-hero-link-color);
 }
 
 .hero a:hover,
 .hero a:focus {
-    color: var(--vstdev-vst-logo-old-dark-color);
+    color: var(--vstdev-hero-link-hover-color);
     text-decoration: none;
 }
 
 .hero a.button {
     color: var(--bulma-title-color);
-    background-color: var(--vstdev-vst-logo-old-light-color);
+    background-color: var(--vstdev-hero-button-background-color);
     border-style: hidden;
 }
 
 .hero a.button:hover {
-    background-color: var(--vstdev-vst-logo-old-middle-lighter-color);
+    background-color: var(--vstdev-hero-button-hover-color);
     border-style: hidden;
 }
 
@@ -126,14 +136,14 @@ body.has-navbar-fixed-top {
 }
 
 .footer {
-    background-color: var(--vstdev-vst-light-grey);
+    background-color: var(--vstdev-footer-background-color);
 }
 
 .footer a {
-    color: grey;
+    color: var(--vstdev-footer-link-color);
 }
 
 .footer a:hover {
-    color: var(--vstdev-vst-logo-old-dark-color);
+    color: var(--vstdev-footer-link-hover-color);
     text-decoration: underline;
 }
