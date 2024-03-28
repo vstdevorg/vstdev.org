@@ -148,6 +148,8 @@ body.has-navbar-fixed-top {
 
 .vstdev-footer strong {
     color: var(--vstdev-footer-strong-color);
+    display: block;
+    margin-bottom: 8px;
 }
 
 .vstdev-footer a {
