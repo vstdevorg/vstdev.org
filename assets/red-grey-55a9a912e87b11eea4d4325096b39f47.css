@@ -23,6 +23,7 @@
     --vstdev-hero-link-color: var(--bulma-title-color);
     --vstdev-hero-link-hover-color: var(--vstdev-vst-icon-light-blue-03);
     --vstdev-hero-button-background-color: var(--vstdev-vst-icon-light-blue-01);
+    --vstdev-hero-button-text-color: #3B3B28;
     --vstdev-hero-button-hover-color: var(--vstdev-vst-logo-old-middle-lighter-color);
     /* footer */
     --vstdev-footer-background-color: var(--vstdev-vst-dev-portal-menu-background-color);
@@ -125,7 +126,7 @@ body.has-navbar-fixed-top {
 }
 
 .hero a.button {
-    color: var(--bulma-title-color);
+    color: var(--vstdev-hero-button-text-color);
     background-color: var(--vstdev-hero-button-background-color);
     border-style: hidden;
 }
