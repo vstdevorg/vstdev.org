@@ -44,7 +44,7 @@ body.has-navbar-fixed-top {
 .vstdev-navbar .vstdev-vst-logo {
     height: 30px;
     vertical-align: middle;
-    padding-left: .75rem;
+    padding-left: 1.5rem;
 }
 
 .vstdev-navbar .navbar-brand {
@@ -64,7 +64,7 @@ body.has-navbar-fixed-top {
 
     .vstdev-navbar .vstdev-vst-logo {
         height: 52px;
-        padding-left: 0rem;
+        padding-left: .75rem;
     }
 
     .vstdev-navbar .navbar-brand {
