@@ -26,8 +26,9 @@
     --vstdev-hero-button-hover-color: var(--vstdev-vst-logo-old-middle-lighter-color);
     /* footer */
     --vstdev-footer-background-color: var(--vstdev-vst-dev-portal-menu-background-color);
-    --vstdev-footer-link-color: grey;
-    --vstdev-footer-link-hover-color: var(--vstdev-vst-icon-light-blue-03);
+    --vstdev-footer-link-color: #525264;
+    --vstdev-footer-link-hover-color: #525264;
+    --vstdev-footer-strong-color: #525264;
 }
 
 /**** navbar ****/
@@ -140,18 +141,23 @@ body.has-navbar-fixed-top {
     vertical-align: middle;
 }
 
-.footer {
+.vstdev-footer {
     background-color: var(--vstdev-footer-background-color);
 }
 
-.footer a {
+.vstdev-footer strong {
+    color: var(--vstdev-footer-strong-color);
+}
+
+.vstdev-footer a {
     color: var(--vstdev-footer-link-color);
 }
 
-.footer a:hover {
+.vstdev-footer a:hover {
     color: var(--vstdev-footer-link-hover-color);
     text-decoration: underline;
 }
+
 /**** font sizes taken from signal.org ****/
 .content p {
     font-size: 16px;
