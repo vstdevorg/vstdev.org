@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name=viewport content="width=device-width,initial-scale=1">
-  <meta name=revisit-after content="1 days">
-  <meta name=content-language content="en">
-  <meta name=language content="english, en">
-  <meta name=robots content="index,follow,noodp">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="revisit-after" content="1 days">
+  <meta name="content-language" content="en">
+  <meta name="language" content="english, en">
+  <meta name="robots" content="index,follow,noodp">
   <script
-    type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{const e=Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"));e.length>0&&e.forEach(e=>{e.addEventListener("click",()=>{const t=e.dataset.target,n=document.getElementById(t);e.classList.toggle("is-active"),n.classList.toggle("is-active")})})})</script>
+    type="text/javascript">document.addEventListener("DOMContentLoaded", () => { const e = Array.prototype.slice.call(document.querySelectorAll(".navbar-burger")); e.length > 0 && e.forEach(e => { e.addEventListener("click", () => { const t = e.dataset.target, n = document.getElementById(t); e.classList.toggle("is-active"), n.classList.toggle("is-active") }) }) })</script>
   <title>VSTDev</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
@@ -21,11 +21,12 @@
 
 <body class="has-navbar-fixed-top">
   <!-- NavBar -->
-  <nav class="navbar vstdev-navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav class="navbar vstdev-navbar is-fixed-top" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
         <a href="https://www.vstdev.org">
-          <img class="vstdev-vst-logo" src="favicons/VST_Logo_Steinberg-apple-touch-icon.png" title="VSTDev Home" />
+          <img class="vstdev-vst-logo" src="favicons/VST_Logo_Steinberg-apple-touch-icon.png" title="VSTDev Home"
+            alt="vstdev-vst-logo">
         </a>
 
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="vstDevNavbar">
@@ -61,8 +62,7 @@
             <span class="icon">
               <i class="fab fa-lg fa-brands fa-discourse"></i></span>
           </a>
-          <a class="navbar-item" href="https://mastodon.social/@vstdev" target="_blank"
-            title="Follow on Mastodon">
+          <a class="navbar-item" href="https://mastodon.social/@vstdev" target="_blank" title="Follow on Mastodon">
             <span class="icon">
               <i class="fab fa-lg fa-brands fa-mastodon"></i></span>
           </a>
@@ -76,6 +76,7 @@
           </div>
         </div>
       </div>
+    </div>
   </nav>
 
   <!-- Hero -->
@@ -142,26 +143,29 @@
         </div>
         <div class="column is-2"><strong>Download</strong>
           <ul>
-            <li><a href="https://www.steinberg.net/vst3sdk" target=_blank>VST 3 SDK</a></li>
-            <li><a href="https://www.steinberg.net/developers" target=_blank>Steinberg SDKs</a></li>
+            <li><a href="https://www.steinberg.net/vst3sdk" target="_blank">VST 3 SDK</a></li>
+            <li><a href="https://www.steinberg.net/developers" target="_blank">Steinberg SDKs</a></li>
           </ul>
         </div>
         <div class="column is-2"><strong>Visit</strong>
           <ul>
-            <li><a href="https://www.steinberg.net" target=_blank>Steinberg</a></li>
-            <li><a href="https://www.kvraudio.com" target=_blank>KVR Audio</a></li>
+            <li><a href="https://www.steinberg.net" target="_blank">Steinberg</a></li>
+            <li><a href="https://www.kvraudio.com" target="_blank">KVR Audio</a></li>
           </ul>
         </div>
         <div class="column is-4 has-text-left-mobile has-text-right">
           <ul>
-            <li><img class="vstdev-vst-trademark-logo"
-                src="https://steinbergmedia.github.io/vst3_dev_portal/resources/licensing_4.png"></img>
+            <li>
+              <img class="vstdev-vst-trademark-logo"
+                src="https://steinbergmedia.github.io/vst3_dev_portal/resources/licensing_4.png"
+                alt="vstdev-vst-trademark-logo">
             </li>
           </ul>
         </div>
       </div>
       <div class="d-flex pt-5">
-        <a href="https://bulma.io" target=_blank><span>Made with Bulma</span><span class="icon is-medium">
+        <a href="https://bulma.io" target="_blank">
+          <span>Made with Bulma</span><span class="icon is-medium">
             <i class="fas fa-heart"></i>
           </span></a>
       </div>
