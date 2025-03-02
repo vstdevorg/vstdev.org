@@ -48,6 +48,12 @@
     padding-left: 1.5rem;
 }
 
+.vstdev-navbar .vstdev-navbar-brand-font {
+    color: var(--vstdev-vst-icon-dark-blue-01);
+    vertical-align: middle;
+    font-size: 20px;
+}
+
 .vstdev-navbar .navbar-brand {
     align-items: center;
     padding-left: 0px;
@@ -119,7 +125,7 @@
     border-style: hidden;
 }
 
-.hero .hero-body .hero-header{
+.hero .hero-body .hero-header {
     max-width: 740px;
     margin: auto;
 }
