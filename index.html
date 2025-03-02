@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Force "light" mode for now -->
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="utf-8">
@@ -11,7 +12,7 @@
   <script
     type="text/javascript">document.addEventListener("DOMContentLoaded", () => { const e = Array.prototype.slice.call(document.querySelectorAll(".navbar-burger")); e.length > 0 && e.forEach(e => { e.addEventListener("click", () => { const t = e.dataset.target, n = document.getElementById(t); e.classList.toggle("is-active"), n.classList.toggle("is-active") }) }) })</script>
   <title>VSTDev</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
   <link rel="stylesheet" href="assets/red-grey-55a9a912e87b11eea4d4325096b39f47.css">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/VST_Logo_Steinberg-apple-touch-icon.png">
@@ -25,14 +26,15 @@
     <div class="container">
       <div class="navbar-brand">
         <a href="https://www.vstdev.org">
-          <img class="vstdev-vst-logo" src="favicons/VST_Logo_Steinberg-apple-touch-icon.png" title="VSTDev Home"
-            alt="vstdev-vst-logo">
+          <img class="vstdev-vst-logo" src="favicons/VST_Logo_Steinberg-apple-touch-icon-no-text.png"
+            title="VSTDev Home" alt="vstdev-vst-logo">
         </a>
 
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="vstDevNavbar">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </a>
       </div>
 
@@ -46,17 +48,6 @@
             target="_blank" title="Hello World VST 3 plug-in example">
             Example
           </a>
-          <a class="navbar-item" href="https://github.com/steinbergmedia/vst3sdk.git" target="_blank"
-            title="Open Source on GitHub">
-            <span class="icon">
-              <i class="fab fa-lg fa-github"></i>
-            </span>
-          </a>
-          <a class="navbar-item" href="https://www.youtube.com/@vstdev" target="_blank" title="Tutorials on YouTube">
-            <span class="icon">
-              <i class="fab fa-lg fa-youtube"></i>
-            </span>
-          </a>
           <a class="navbar-item" href="https://forums.steinberg.net/c/developer/vst-3-sdk" target="_blank"
             title="Official developer forum">
             <span class="icon">
@@ -66,6 +57,17 @@
             <span class="icon">
               <i class="fab fa-lg fa-brands fa-mastodon"></i></span>
           </a>
+          <a class="navbar-item" href="https://www.youtube.com/@vstdev" target="_blank" title="Tutorials on YouTube">
+            <span class="icon">
+              <i class="fab fa-lg fa-youtube"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="https://github.com/steinbergmedia/vst3sdk.git" target="_blank"
+            title="Open Source on GitHub">
+            <span class="icon">
+              <i class="fab fa-lg fa-github"></i>
+            </span>
+          </a>
         </div>
       </div>
     </div>
@@ -74,57 +76,51 @@
   <!-- Hero -->
   <section class="hero is-main-hero has-background is-medium">
     <div class="hero-body">
-      <div class="container">
-        <div class="columns">
-          <div class="column has-text-centered">
-            <h1 class="is-spacing">Virtual Studio Technology™</h1>
-            <h2 class="mt-5">Audio Plug-in SDK</h2>
-            <p class="is-size-2 mt-2">
-              <span class="icon is-large">
-                <i class="fab fa-brands fa-windows"></i>
+      <div class="columns has-text-centered">
+        <div class="column">
+
+          <div class="hero-header">
+            <h1 class="is-spacing">Virtual Studio Technology</h1>
+            <p class="py-4 is-size-5">The <strong>VST 3 SDK</strong> is a free, platform independent and open source
+              framework to build
+              audio
+              plug-ins for digital audio workstations.</p>
+          </div>
+
+          <div class="hero-buttons">
+            <a class="button bd-fat-button is-large" href="https://github.com/steinbergmedia/vst3sdk.git"
+              target="_blank">
+              <span class="icon is-medium">
+                <i class="fab fa-github"></i>
               </span>
-              <span class="icon is-large">
-                <i class="fab fa-brands fa-apple"></i>
+              <span>Clone</span>
+            </a>
+            <a class="button bd-fat-button is-large" href="https://www.steinberg.net/vst3sdk" target="_blank">
+              <span class="icon is-medium">
+                <i class="fas fa-download"></i>
               </span>
-              <span class="icon is-large">
-                <i class="fab fa-brands fa-linux"></i>
+              <span>Download</span>
+            </a>
+            <a class="button bd-fat-button is-large" href="https://steinbergmedia.github.io/vst3_dev_portal"
+              target="_blank">
+              <span class="icon is-medium">
+                <i class="fas fa-book"></i>
               </span>
-            </p>
-            <div class="hero-buttons">
-              <a class="button bd-fat-button is-large" href="https://github.com/steinbergmedia/vst3sdk.git"
-                target="_blank">
-                <span class="icon is-medium">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Clone</span>
-              </a>
-              <a class="button bd-fat-button is-large" href="https://www.steinberg.net/vst3sdk" target="_blank">
-                <span class="icon is-medium">
-                  <i class="fas fa-download"></i>
-                </span>
-                <span>Download</span>
-              </a>
-              <a class="button bd-fat-button is-large" href="https://steinbergmedia.github.io/vst3_dev_portal"
-                target="_blank">
-                <span class="icon is-medium">
-                  <i class="fas fa-book"></i>
-                </span>
-                <span>Get Started</span>
-              </a>
-              <a class="button bd-fat-button is-large" href="https://forums.steinberg.net/c/developer/vst-3-sdk"
-                target="_blank">
-                <span class="icon is-medium">
-                  <i class="fab fa-lg fa-brands fa-discourse"></i>
-                </span>
-                <span>Discuss</span>
-              </a>
-            </div>
-            <div class="block mt-5">
-              Currently <strong>v3.7.13</strong>
-              <span class="px-1">&middot;</span>
-              <a href="https://github.com/steinbergmedia/vst3sdk/commits/master" target="_blank" class="">All
-                releases</a>
-            </div>
+              <span>Get Started</span>
+            </a>
+            <a class="button bd-fat-button is-large" href="https://forums.steinberg.net/c/developer/vst-3-sdk"
+              target="_blank">
+              <span class="icon is-medium">
+                <i class="fab fa-lg fa-brands fa-discourse"></i>
+              </span>
+              <span>Get Help</span>
+            </a>
+          </div>
+          <div class="block mt-5">
+            Currently <strong>v3.7.13</strong>
+            <span class="px-1">&middot;</span>
+            <a href="https://github.com/steinbergmedia/vst3sdk/commits/master" target="_blank" class="">All
+              releases</a>
           </div>
         </div>
       </div>
@@ -135,10 +131,18 @@
   <footer class="footer vstdev-footer">
     <div class="container">
       <div class="columns">
-        <div class="column is-2"><strong>VSTDev</strong>
+        <div class="column is-2"><strong>Follow Us</strong>
           <ul>
-            <li><a href="https://github.com/vstdevorg" target="_blank">Contact</a></li>
+            <li><a href="https://mastodon.social/@vstdev" target="_blank">Mastodon</a></li>
             <li><a href="https://www.youtube.com/@vstdev" target="_blank">YouTube</a></li>
+            <li><a href="https://github.com/vstdevorg" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="column is-2"><strong>Download</strong>
+          <ul>
+            <li><a href="https://www.steinberg.net/vst3sdk" target="_blank">VST 3 SDK</a></li>
+            <li><a href="https://www.steinberg.net/developers" target="_blank">Steinberg SDKs</a></li>
+            <li><a href="https://github.com/steinbergmedia/vst3sdk.git" target="_blank">GitHub</a></li>
           </ul>
         </div>
         <div class="column is-2"><strong>Get Help</strong>
@@ -146,12 +150,6 @@
             <li><a href="https://forums.steinberg.net/c/developer/vst-3-sdk" target="_blank">VST 3 Community</a>
             </li>
             <li><a href="https://forums.steinberg.net/c/developer/vstgui" target="_blank">VSTGUI Community</a></li>
-          </ul>
-        </div>
-        <div class="column is-2"><strong>Download</strong>
-          <ul>
-            <li><a href="https://www.steinberg.net/vst3sdk" target="_blank">VST 3 SDK</a></li>
-            <li><a href="https://www.steinberg.net/developers" target="_blank">Steinberg SDKs</a></li>
           </ul>
         </div>
         <div class="column is-2"><strong>Visit</strong>
@@ -163,9 +161,11 @@
         <div class="column is-4 has-text-left-mobile has-text-right">
           <ul>
             <li>
-              <img class="vstdev-vst-trademark-logo"
-                src="https://steinbergmedia.github.io/vst3_dev_portal/resources/licensing_4.png"
+              <img class="vstdev-vst-trademark-logo" src="favicons/VST_Logo_Steinberg-apple-touch-icon.png"
                 alt="vstdev-vst-trademark-logo">
+              <p class="py-2">
+                VST is a registered trademark of Steinberg Media Technologies GmbH
+              </p>
             </li>
           </ul>
         </div>
