@@ -5,7 +5,7 @@
     --vstdev-vst-logo-old-dark-color: #8b9ea8;
     --vstdev-vst-logo-old-middle-light-color: #aabcc5;
     --vstdev-vst-logo-old-middle-lighter-color: #b9cbd3;
-    /* vst icon colors */
+    /* vst icon (the cube) colors */
     --vstdev-vst-icon-light-blue-01: #c8d8e1;
     --vstdev-vst-icon-light-blue-02: #9fb4c4;
     --vstdev-vst-icon-light-blue-03: #6d879b;
@@ -31,9 +31,12 @@
     --vstdev-footer-link-color: #525264;
     --vstdev-footer-link-hover-color: #525264;
     --vstdev-footer-strong-color: #525264;
-
+    /* burger */
+    --vstdev-navbar-burger-color: var(--vstdev-vst-icon-dark-blue-02);
+    --vstdev-navbar-burger-hover-background-color: var(--vstdev-vst-icon-light-blue-01);
     /* Make the navbar a bit more high */
     --bulma-navbar-height: 4rem;
+    --vstdev-navbar-brand-burger-padding: 1.5rem;
 }
 
 /* Put a small 1px line on the bottom to separate the navbar from the hero */
@@ -45,7 +48,6 @@
 .vstdev-navbar .vstdev-vst-logo {
     height: 2.5rem;
     vertical-align: middle;
-    padding-left: 1.5rem;
 }
 
 .vstdev-navbar .vstdev-navbar-brand-font {
@@ -56,7 +58,15 @@
 
 .vstdev-navbar .navbar-brand {
     align-items: center;
-    padding-left: 0px;
+    padding-left: var(--bulma-column-gap);
+}
+
+@media (max-width: 1024px) {
+    .vstdev-navbar .navbar-brand {
+        align-items: center;
+        padding-left: var(--vstdev-navbar-brand-burger-padding);
+    }
+
 }
 
 .navbar-item img {
@@ -66,6 +76,15 @@
 .navbar-menu.is-active {
     position: absolute;
     width: 100%;
+}
+
+.vstdev-navbar .vstdev-burger:hover {
+    background-color: var(--vstdev-navbar-burger-hover-background-color);
+}
+
+.vstdev-navbar .vstdev-burger {
+    color: var(--vstdev-navbar-burger-color);
+    margin-inline-end: var(--vstdev-navbar-brand-burger-padding);
 }
 
 .vstdev-navbar .navbar-item,
