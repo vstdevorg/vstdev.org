@@ -61,12 +61,12 @@
     padding-left: var(--bulma-column-gap);
 }
 
-@media (max-width: 1024px) {
+/* max-width must be '1023', at '1024' tablet starts*/
+@media (max-width: 1023px) {
     .vstdev-navbar .navbar-brand {
         align-items: center;
         padding-left: var(--vstdev-navbar-brand-burger-padding);
     }
-
 }
 
 .navbar-item img {
