@@ -135,6 +135,7 @@
     color: var(--vstdev-hero-button-text-color);
     background-color: var(--vstdev-hero-button-background-color);
     border-style: hidden;
+    box-shadow: none;
 }
 
 .hero a.button:hover {
