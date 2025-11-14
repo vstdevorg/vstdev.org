@@ -35,7 +35,7 @@
     --vstdev-navbar-burger-color: var(--vstdev-vst-icon-dark-blue-02);
     --vstdev-navbar-burger-hover-background-color: var(--vstdev-vst-icon-light-blue-01);
     /* Make the navbar a bit more high */
-    --bulma-navbar-height: 4rem;
+    --bulma-navbar-height: 3.5rem;
     --vstdev-navbar-brand-burger-padding: 1.5rem;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .vstdev-navbar .vstdev-vst-logo {
-    height: 3rem;
+    height: 2.5rem;
     vertical-align: middle;
 }
 
