@@ -46,14 +46,13 @@
 }
 
 .vstdev-navbar .vstdev-vst-logo {
-    height: 2.5rem;
+    height: 2.0rem;
     vertical-align: middle;
 }
 
 .vstdev-navbar .vstdev-navbar-brand-font {
     color: var(--vstdev-vst-icon-dark-blue-02);
     vertical-align: middle;
-    font-size: 20px;
 }
 
 .vstdev-navbar .navbar-brand {
