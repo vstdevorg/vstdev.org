@@ -29,6 +29,7 @@
         --vstdev-navbar-button-hover-color: var(--vstdev-vst-logo-old-middle-lighter-color);
         --vstdev-navbar-button-text-color: var(--bulma-title-color);
         /* hero */
+        --vstdev-hero-background-color: white;
         --vstdev-hero-strong-color: var(--bulma-title-color);
         --vstdev-hero-link-color: var(--bulma-title-color);
         --vstdev-hero-link-hover-color: var(--vstdev-vst-icon-light-blue-03);
@@ -40,6 +41,7 @@
         --vstdev-footer-background-color: var(--vstdev-vst-dev-portal-menu-background-color);
         --vstdev-footer-link-color: #525264;
         --vstdev-footer-link-hover-color: #525264;
+        --vstdev-footer-paragraph-color: #525264;
         /* burger */
         --vstdev-navbar-burger-color: var(--vstdev-vst-icon-dark-blue-02);
         --vstdev-navbar-burger-hover-background-color: var(--vstdev-vst-icon-light-blue-01);
@@ -49,26 +51,28 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* navbar */
-        --vstdev-navbar-background-color: white;
-        --vstdev-navbar-border-bottom-color: #ebeaeb;
-        --vstdev-navbar-brand-font-color: var(--vstdev-vst-icon-dark-blue-02);
-        --vstdev-navbar-item-link-color: var(--vstdev-vst-icon-dark-blue-02);
-        --vstdev-navbar-item-link-hover-color: var(--vstdev-vst-icon-light-blue-03);
+        --vstdev-navbar-background-color: #1a1a1a;
+        --vstdev-navbar-border-bottom-color: #353535;
+        --vstdev-navbar-brand-font-color: var(--vstdev-vst-icon-light-blue-02);
+        --vstdev-navbar-item-link-color: var(--vstdev-vst-icon-light-blue-02);
+        --vstdev-navbar-item-link-hover-color: var(--vstdev-vst-icon-light-blue-01);
         --vstdev-navbar-button-background-color: var(--vstdev-vst-icon-light-blue-01);
         --vstdev-navbar-button-hover-color: var(--vstdev-vst-logo-old-middle-lighter-color);
         --vstdev-navbar-button-text-color: var(--bulma-title-color);
         /* hero */
+        --vstdev-hero-background-color: #1a1a1a;
         --vstdev-hero-strong-color: var(--bulma-title-color);
         --vstdev-hero-link-color: var(--bulma-title-color);
         --vstdev-hero-link-hover-color: var(--vstdev-vst-icon-light-blue-03);
-        --vstdev-hero-button-background-color: var(--vstdev-vst-icon-light-blue-01);
-        --vstdev-hero-button-text-color: #3B3B28;
-        --vstdev-hero-button-hover-color: var(--vstdev-vst-logo-old-middle-lighter-color);
+        --vstdev-hero-button-background-color: var(--vstdev-vst-icon-dark-blue-02);
+        --vstdev-hero-button-text-color: white;
+        --vstdev-hero-button-hover-color: var(--vstdev-vst-icon-dark-blue-01);
         /* footer */
-        --vstdev-footer-strong-color: #525264;
-        --vstdev-footer-background-color: var(--vstdev-vst-dev-portal-menu-background-color);
-        --vstdev-footer-link-color: #525264;
-        --vstdev-footer-link-hover-color: #525264;
+        --vstdev-footer-strong-color: #e2e2e2;
+        --vstdev-footer-background-color: #2f2f2f;
+        --vstdev-footer-link-color: #969696;
+        --vstdev-footer-link-hover-color: #969696;
+        --vstdev-footer-paragraph-color: #969696;
         /* burger */
         --vstdev-navbar-burger-color: var(--vstdev-vst-icon-dark-blue-02);
         --vstdev-navbar-burger-hover-background-color: var(--vstdev-vst-icon-light-blue-01);
@@ -149,7 +153,7 @@
 
 /**** hero ****/
 .hero.is-main-hero {
-    background-color: #ffffff;
+    background-color: var(--vstdev-hero-background-color);
 }
 
 .hero strong {
@@ -200,6 +204,10 @@
 }
 
 .vstdev-footer a {
+    color: var(--vstdev-footer-link-color);
+}
+
+.vstdev-footer p {
     color: var(--vstdev-footer-link-color);
 }
 
