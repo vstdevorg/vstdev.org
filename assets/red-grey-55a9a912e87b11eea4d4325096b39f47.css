@@ -61,7 +61,7 @@
 
         /* navbar */
         --vstdev-navbar-border-bottom-color: #353535;
-        --vstdev-navbar-brand-font-color: var(--vstdev-vst-icon-light-blue-02);
+        --vstdev-navbar-brand-font-color: var(--vstdev-vst-icon-light-blue-01);
         --vstdev-navbar-item-link-color: #979797;
         --vstdev-navbar-item-link-hover-color: var(--vstdev-vst-icon-light-blue-02);
         --vstdev-navbar-button-background-color: var(--vstdev-vst-icon-light-blue-01);
