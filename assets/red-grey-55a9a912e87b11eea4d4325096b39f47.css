@@ -118,10 +118,18 @@
     padding-left: var(--bulma-column-gap);
 }
 
+.vstdev-navbar .navbar-item {
+    padding-left: var(--bulma-column-gap);
+}
+
 /* max-width must be '1023', at '1024' tablet starts*/
 @media (max-width: 1023px) {
     .vstdev-navbar .navbar-brand {
         align-items: center;
+        padding-left: var(--vstdev-navbar-brand-burger-padding);
+    }
+
+    .vstdev-navbar .navbar-item {
         padding-left: var(--vstdev-navbar-brand-burger-padding);
     }
 }
