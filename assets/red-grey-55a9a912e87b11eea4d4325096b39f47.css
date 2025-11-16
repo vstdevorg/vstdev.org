@@ -10,6 +10,7 @@
     --vstdev-vst-icon-light-blue-02: #9fb4c4;
     --vstdev-vst-icon-light-blue-03: #6d879b;
     --vstdev-vst-icon-dark-blue-01: #648094;
+    --vstdev-vst-icon-dark-blue-015: #465D6F;
     --vstdev-vst-icon-dark-blue-02: #273a4a;
 
     /* Make the navbar a bit more high */
@@ -19,8 +20,10 @@
 
 @media (prefers-color-scheme: light) {
     :root {
+        /* bulma main scheme */
+        --bulma-scheme-main: white;
+
         /* navbar */
-        --vstdev-navbar-background-color: white;
         --vstdev-navbar-border-bottom-color: #ebeaeb;
         --vstdev-navbar-brand-font-color: var(--vstdev-vst-icon-dark-blue-02);
         --vstdev-navbar-item-link-color: var(--vstdev-vst-icon-dark-blue-02);
@@ -29,7 +32,7 @@
         --vstdev-navbar-button-hover-color: var(--vstdev-vst-logo-old-middle-lighter-color);
         --vstdev-navbar-button-text-color: var(--bulma-title-color);
         /* hero */
-        --vstdev-hero-background-color: white;
+        --vstdev-hero-background-color: var(--bulma-scheme-main);
         --vstdev-hero-strong-color: var(--bulma-title-color);
         --vstdev-hero-link-color: var(--bulma-title-color);
         --vstdev-hero-link-hover-color: var(--vstdev-vst-icon-light-blue-03);
@@ -45,28 +48,33 @@
         /* burger */
         --vstdev-navbar-burger-color: var(--vstdev-vst-icon-dark-blue-02);
         --vstdev-navbar-burger-hover-background-color: var(--vstdev-vst-icon-light-blue-01);
+
+        --vstdev-text-primary-00: var(--vstdev-vst-icon-dark-blue-02);
+        --vstdev-text-secondary-00: #767676;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
+        /* bulma main scheme */
+        --bulma-scheme-main: #1a1a1a;
+
         /* navbar */
-        --vstdev-navbar-background-color: #1a1a1a;
         --vstdev-navbar-border-bottom-color: #353535;
         --vstdev-navbar-brand-font-color: var(--vstdev-vst-icon-light-blue-02);
-        --vstdev-navbar-item-link-color: var(--vstdev-vst-icon-light-blue-02);
-        --vstdev-navbar-item-link-hover-color: var(--vstdev-vst-icon-light-blue-01);
+        --vstdev-navbar-item-link-color: #979797;
+        --vstdev-navbar-item-link-hover-color: var(--vstdev-vst-icon-light-blue-02);
         --vstdev-navbar-button-background-color: var(--vstdev-vst-icon-light-blue-01);
         --vstdev-navbar-button-hover-color: var(--vstdev-vst-logo-old-middle-lighter-color);
         --vstdev-navbar-button-text-color: var(--bulma-title-color);
         /* hero */
-        --vstdev-hero-background-color: #1a1a1a;
+        --vstdev-hero-background-color: var(--bulma-scheme-main);
         --vstdev-hero-strong-color: var(--bulma-title-color);
         --vstdev-hero-link-color: var(--bulma-title-color);
-        --vstdev-hero-link-hover-color: var(--vstdev-vst-icon-light-blue-03);
+        --vstdev-hero-link-hover-color: var(--vstdev-vst-icon-light-blue-02);
         --vstdev-hero-button-background-color: var(--vstdev-vst-icon-dark-blue-02);
-        --vstdev-hero-button-text-color: white;
-        --vstdev-hero-button-hover-color: var(--vstdev-vst-icon-dark-blue-01);
+        --vstdev-hero-button-text-color: var(--vstdev-vst-icon-light-blue-01);
+        --vstdev-hero-button-hover-color: var(--vstdev-vst-icon-dark-blue-015);
         /* footer */
         --vstdev-footer-strong-color: #e2e2e2;
         --vstdev-footer-background-color: #2f2f2f;
@@ -74,15 +82,25 @@
         --vstdev-footer-link-hover-color: #969696;
         --vstdev-footer-paragraph-color: #969696;
         /* burger */
-        --vstdev-navbar-burger-color: var(--vstdev-vst-icon-dark-blue-02);
-        --vstdev-navbar-burger-hover-background-color: var(--vstdev-vst-icon-light-blue-01);
+        --vstdev-navbar-burger-color: var(--vstdev-vst-icon-light-blue-02);
+        --vstdev-navbar-burger-hover-background-color: var(--vstdev-vst-icon-dark-blue-02);
+
+        --vstdev-text-primary-00: var(--vstdev-vst-icon-light-blue-02);
+        --vstdev-text-secondary-00: #979797;
     }
+}
+
+.vstdev-has-text-primary {
+    color: var(--vstdev-text-primary-00);
+}
+
+.vstdev-has-text-secondary {
+    color: var(--vstdev-text-secondary-00);
 }
 
 /* Put a small 1px line on the bottom to separate the navbar from the hero */
 .vstdev-navbar {
     border-bottom: 1px solid var(--vstdev-navbar-border-bottom-color);
-    background-color: var(--vstdev-navbar-background-color);
 }
 
 .vstdev-navbar .vstdev-vst-logo {
